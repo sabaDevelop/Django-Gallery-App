@@ -1,0 +1,91 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box; }
+
+li {
+list-style-type: none; }
+
+a {
+text-decoration: none;
+color: black; }
+
+body {
+    background: url(../new/5781536.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        }
+
+.toge{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    width:500px;
+    height:540px;
+    margin:auto;
+    margin-top:100px
+}
+
+.set{
+    margin-top:130px
+}
+
+.set button{
+    width:168px;
+    border:none;
+    background-color: rgb(174, 125, 220);
+    color:white;
+    height:41px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: logo;
+    src: url("../new/Break\ Bold.ttf"); } 
+
+@font-face {
+    font-family: txt;
+    src: url("../new/Raleway-ExtraBold.ttf"); } 
+
+.but{
+    margin-top:50px;
+}
+
+
+form p{
+    font-family:txt;
+    display:flex;
+    flex-direction: column;
+}
+
+form input{
+    margin:auto;
+}
+
+input[name="image"]{
+    margin-left:170px
+}
+
+i{
+    font-size:30px;
+}
+
+.fol i{
+    position: relative;
+    top:34px;
+    right:211px
+}
+
+h1{
+    color:rgb(66, 151, 61);
+    font-size:50px;
+    font-family: logo;
+}
+
+textarea[name="caption"]{
+    height:50px;
+    width: 100%;
+}

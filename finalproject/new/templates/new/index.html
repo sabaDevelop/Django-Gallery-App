@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'new/indexx.css' %}" >
+    <title>Home</title>
+</head>
+<body>
+    <div class = "navigation">
+        <h1><a href = "{% url 'new:index' %}">Art House </a></h1>
+        <div class="navhe">
+            <h2>Welcome To Art House</h2>
+            <p>This site is about user uploading photos for browsing, expressing emotion and entertainment.<div><p>
+               Please enjoy.</p></div></p>
+        </div>
+        <ul>
+                <li><a href = "{% url 'new:index' %}">Home</a></li>
+            {% if request.user.is_authenticated %}
+                <li><a href = "{% url 'accounts:profile' %}">Profile</a></li>
+                <li class="red"><a href = "{% url 'accounts:logout' %}">Logout</a></li> 
+
+                  
+        </ul>     
+            {% else %}
+        {% endif %}
+    </div>
+    <div class="nav2">
+        <ul>
+            <li><a href = "{% url 'new:img_upload' %}">UploadImage</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container">  
+        {% for x in img %}
+        {% if forloop.first %}<div class="row ">{% endif %}
+        <div class="scrimg">
+            <div class="name"> <h2>{{x.author.username}}</h2></div>
+            <div><img class = "main_img" src="{{x.image.url}}" height="100%" width="50%"alt="..."></div>
+            <div> <p class="com" >Caption: {{x.caption}}</p></div>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

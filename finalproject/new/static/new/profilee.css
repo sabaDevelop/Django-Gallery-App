@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; }
+  
+  li {
+    list-style-type: none; }
+  
+  a {
+    text-decoration: none;
+    color: black; }
+
+@font-face {
+    font-family: sbold;
+    src: url("../new/Raleway-SemiBold.ttf") }  ;  
+    
+@font-face {
+    font-family: sthin;
+    src: url("../new/Roboto-Thin.ttf") }
+        
+
+h1, h2{
+    font-family: sbold;
+}
+
+h1{
+    margin-top:50px
+}
+
+.email{
+    font-family: sthin;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    height:500px;
+    width:75%;
+    margin:auto;
+    margin-top:4.7%;
+
+
+}
+
+body {
+    background: url(../new/5781536.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      }
+
+.imgProf{
+    display: flex;
+    align-items: center;
+}
+
+.imgstyle{
+    width:500px
+}
+
+.user_prof{
+    width:150px
+}
+
+.corner{
+    text-align: end;
+    position: relative;
+    bottom:121px;
+    display:flex;
+    flex-direction: row;
+}
+
+.info{
+    position: relative;
+    left:200px
+}   

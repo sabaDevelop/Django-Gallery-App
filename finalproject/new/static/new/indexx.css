@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; }
+  
+  li {
+    list-style-type: none; }
+  
+  a {
+    text-decoration: none;
+    color: black; }
+
+.navigation  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(235, 248, 240)
+    /* background-color: rgb(229, 213, 245); */
+    
+    
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.red a{
+  border:2px solid red;
+  height: 24px;
+  padding-bottom:3px;
+  border-radius:5px
+}
+
+.navigation ul li{
+    display: flex;
+    flex-direction: row;
+    margin:10px
+}
+
+.navhe{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size:45px;
+  font-family: logo ;
+}
+
+.navhe h2{
+  margin-bottom:60px;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+    margin-bottom:20px
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.navhe p{
+  font-size:24px;
+  font-family:pp ;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+
+
+@font-face {
+  font-family: logo;
+  src: url("../new/Break\ Bold.ttf"); } 
+
+@font-face {
+  font-family: txt;
+  src: url("../new/Raleway-ExtraBold.ttf"); } 
+
+@font-face {
+  font-family: com;
+  src: url("../new/Spicy\ Potatos.otf"); } 
+
+@font-face {
+  font-family: for;
+  src: url("../new/DrPhibesShadow-1GAnB.ttf"); } 
+
+@font-face {
+  font-family: pp;
+  src: url("../new/Raleway-LightItalic.ttf"); } 
+
+h1{
+  font-family: logo;
+}
+
+
+.text-center{
+  font-family: com;
+}
+
+body{
+  background-color: #eecbfffb;
+}
+
+.container{
+  display:flex;
+
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 460px 460px 460px;
+  margin:auto;
+  
+}
+
+
+
+.scrimg h2{
+  font-family: logo;
+}
+
+.nav2{
+  margin-top:10px
+}
+
+.nav2 ul{
+  margin-bottom:10px;
+  
+}
+
+.scrimg{
+  cursor:zoom-in;
+  margin-bottom:60px;
+  margin-top:20px
+}
+
+.main_img{
+  border:5px solid rgb(245, 245, 245);
+  box-shadow: 2px 2px 17px 1px;
+  width:400px;
+  height:300px;
+  
+  
+}
+
+
+.main_img:hover{
+  transform: scale(1.5);
+  
+}

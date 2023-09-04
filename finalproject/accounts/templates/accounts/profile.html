@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'new/profilee.css' %}" >
+    <title>Profile</title>
+</head>
+<body>
+    <div class = "profile">
+
+        <div class = "imgProf">
+            <img class = "imgstyle" src = "{% static 'accounts/istockphoto-1281150061-612x612.jpg' %}">
+            <div class="info">
+                <div class="corner">
+                    <img class ="user_prof" src="{% static 'accounts/istockphoto-1337144146-612x612.jpg' %}">
+                    <h1>{{user.username}} </h1>
+                </div>
+                    <h2>Email: <span class = "email">{{user.email}}</span></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

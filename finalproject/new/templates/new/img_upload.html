@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'new/img_uploads.css' %}" >
+    <title>Upload Image</title>
+</head>
+<body>
+    <div class="toge">
+        <div class="fol">
+            <i class="fa-regular fa-folder-open"></i>
+            <h1>Upload Image</h1>
+        </div>
+        <form class="set" action="{% url 'new:img_upload' %}" method="post" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            {{form.as_p}}
+                
+            <button class="but" type="submit" class="btn btn-lg btn-success">Upload</button>
+    </div>
+        </form>
+
+    <script src="https://kit.fontawesome.com/d8f4d11d85.js" crossorigin="anonymous"></script>
+</body>
+</html>

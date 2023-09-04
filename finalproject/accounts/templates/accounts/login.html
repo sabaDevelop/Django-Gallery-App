@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8f4d11d85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href = "{% static 'new/login.css' %}" >
+    <title>Log In</title>
+</head>
+<body>
+    <div class = "content">
+        <h1>LOGIN</h1>
+        {% if error %}
+            <p>{{error}}</p>
+        {% endif %}
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form}}
+            <input class = "buttonClick" type="submit" value="Login" />
+        </form>
+        <p class = "new_account"><a href = "{% url 'accounts:register' %}">Create new account</a></p>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; }
+  
+  li {
+    list-style-type: none; }
+  
+  a {
+    text-decoration: none;
+    color: black; }
+
+body {
+    background: url(../new/5781536.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      }
+
+@font-face {
+        font-family: extraBold;
+        src: url("../new/Raleway-ExtraBold.ttf"); }    
+    
+h1{
+    font-family:extraBold ;
+    display:flex;
+    flex-direction: row;
+    padding-left:60px;
+    margin-bottom:55px;
+}
+
+input, button{
+    border:none;
+    height:38px;
+    width:235px;
+    margin-top:10px
+}
+
+input{
+    background-color: rgb(200, 196, 196);
+}
+
+.buttonClick{
+    color:white;
+    background-color:rgb(174, 125, 220);
+    margin-top:30px
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+.content{
+    background-color:white;
+    height:600px;
+    width:450px;
+    margin: auto;
+    margin-top:5%;
+    padding-left:7%;
+    padding-top:3%;
+    box-shadow: 0px 0px 35px 5px
+
+}
+
+.new_account{
+    background-color: #42b72a;
+    text-align: center;
+    height:38px;
+    width:150px;   
+    padding-top:2.5%;
+    margin-top:35px;
+    margin-left:12.5%;
+    border-radius: 5px;
+}
+
+.new_account a{
+    color:white
+}
